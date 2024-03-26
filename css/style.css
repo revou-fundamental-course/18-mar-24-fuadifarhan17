@@ -1,0 +1,40 @@
+.header-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 24px;
+padding-right: 24px;
+background-color: gold;
+}
+
+.hr {
+    margin: 0px;
+}
+
+.identitas-container {
+    display: flex;
+    /* flex-direction: row; */
+    flex-flow: row-reverse;
+}
+
+.identitas-pt {
+    text-align: center;
+    padding-left: 72px;
+    padding-right: 0px;
+    justify-items: center;
+    padding-top: 32px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-image: url(../picture/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-konten {
+    display: flex;
+}

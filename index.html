@@ -1,0 +1,93 @@
+<!--Dibuat oleh Farhan Fuadi-->
+<!--Sebagai Tugas dari Fundamental Course RevoU-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Farhan Fuadi</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header class="header-container">
+            <section class="logo-icon"></section>
+            <section class="nav-container">
+            <button>Home</button>
+            <button>Our Pages</button>
+            <button>Call Us</button>
+            </section>
+        </header>
+        <hr></hr>
+            <section class="section-container"></section>
+            <header class="identitas-container">
+            <div class="bg-identitas"></div>
+            <img src="picture/Kabah2.png" alt="bg-identitas" style="width: 40%;position: relative;/* opacity: 0.2; */display: block;margin: auto;">
+            <div class="identitas-pt">
+                <h1 style="font-family:fantasy; font-size: 64px;
+                "><b>NUR FUADI TRAVEL</b></h1>
+                <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 32pt;"
+                >Haji & Umroh</h3>
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 19pt"
+                ><i>"Dengan Bismillah Kami Temani Perjalanan Ibadah Anda"</i></h3>
+            </div>
+            </header>
+    <hr></hr>
+            <div class="main-konten">
+                <!--Ini konten auto slide banner-->
+                <div style ="height: 300px; width: 100%;
+                background-color: lightgoldenrodyellow; margin-right: 16px; margin-left: 8px"></div>
+                <!--Ini konten form-->
+                <div style="height: 300px; width : 100%;
+                background-color:lightyellow; margin-left: 16px; margin-right: 8px;">
+                <h3><b>Segera Daftarkan Diri Anda</b></h3>
+                <h4><b>Pesan sekarang juga, Insyaallah Berkah</b></h4>
+                <form name="message-form" onsubmit="return validateForm()">
+                Nama: 
+                <input placeholder="Nama Lengkap" type="text" name="nama-lengkap" />
+                <br>
+                Tanggal lahir:
+                <input type="date" name="tanggal-lahir" />
+                <br>
+                Jenis Kelamin:
+                <input type="radio" id="male" name="gender" value="Laki-laki" />
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan" />
+                <label for="female">Perempuan</label>
+                <br>
+                No HP:
+                <input placeholder="Nomor Telp/HP" type="text" name="no-hp" />
+                <br>
+                Paket:
+                <select name="paket">
+                    <option
+                        value="Haji Plus">Haji PLUS</option>
+                    <option
+                        value="Haji">Haji</option>
+                    <option
+                        value="Umroh Plus Turki">Umroh Plus Turki</option>
+                    <option
+                        value="Umroh Plus Mesir">Umroh Plus Mesir</option>
+                    <option
+                        value="Umroh Plus Dubai">Umroh Plus Dubai</option>
+                </select>
+                <br>
+                Pesan:
+                <textarea placeholder="Tuliskan rencana pemberangkatan pada bulan apa" name="messages"></textarea>
+                <br>
+                <input type="submit" value="Booking" />
+                </form>
+                </div>
+            </div>
+    <hr></hr>
+            <div>
+                <h2>Resume Pendaftaran</h2>
+                <p>Nama : <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>No. Telpon / HP : <span id="sender-no-telp"></span></p>
+                <p>Pilihan Paket : <span id="sender-paket"></span></p>
+                <p>Pesan : <span id="sender-messages"></span></p>
+            </div>
+    </body>
+    <footer>
+    </footer>
+</html>
