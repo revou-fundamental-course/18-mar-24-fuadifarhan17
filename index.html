@@ -5,6 +5,17 @@
     <head>
         <title>Assignment Farhan Fuadi</title>
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            @media screen and (max-width: 600px) {
+                .header-container {
+                    flex-direction: column;
+                }
+               
+                .logo-icon{
+                     margin-bottom: 14px;
+                }
+            }
+        </style>
         <script src="js/script.js"></script>
     </head>
     <body>
@@ -33,10 +44,24 @@
     <hr></hr>
             <div class="main-konten">
                 <!--Ini konten auto slide banner-->
-                <div style ="height: 300px; width: 100%;
-                background-color: lightgoldenrodyellow; margin-right: 16px; margin-left: 8px"></div>
+                <div style ="height: 500px; width: 100%;
+                background-color: lightgoldenrodyellow; margin-right: 16px; margin-left: 8px">
+                <div class="img-slideshow">
+                <img src="picture/gambar 1.jpeg">
+                </div>
+                <div
+                class="img-slideshow">
+                <img src="picture/gambar 2.jpeg">
+                </div>
+                <div
+                class="img-slideshow">
+                <img src="picture/gambar 3.jpg">
+                </div>
+                <button onclick="plusSlides(-1)">Sebelumnya</button>
+                <button onclick="plusSlides(1)">Selanjutnya</button>
+                </div>
                 <!--Ini konten form-->
-                <div style="height: 300px; width : 100%;
+                <div style="height: 500px; width : 100%;
                 background-color:lightyellow; margin-left: 16px; margin-right: 8px;">
                 <h3><b>Segera Daftarkan Diri Anda</b></h3>
                 <h4><b>Pesan sekarang juga, Insyaallah Berkah</b></h4>
