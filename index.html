@@ -46,19 +46,56 @@
                 <!--Ini konten auto slide banner-->
                 <div style ="height: 500px; width: 100%;
                 background-color: lightgoldenrodyellow; margin-right: 16px; margin-left: 8px">
-                <div class="img-slideshow">
-                <img src="picture/gambar 1.jpeg">
+                <h2 style="text-align:center">Dokumentasi Pelaksanaan Haji dan Umroh</h2>
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="picture/gambar 1.jpeg" style="width:100%">
+                  <div class="text"><b>Kegiatan 1</b></div>
                 </div>
-                <div
-                class="img-slideshow">
-                <img src="picture/gambar 2.jpeg">
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="picture/gambar 2.jpeg" style="width:100%">
+                  <div class="text"><b>Kegiatan 2</b></div>
                 </div>
-                <div
-                class="img-slideshow">
-                <img src="picture/gambar 3.jpg">
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="picture/gambar 3.jpg" style="width:100%">
+                  <div class="text"><b>Kegiatan 3</b></div>
                 </div>
-                <button onclick="plusSlides(-1)">Sebelumnya</button>
-                <button onclick="plusSlides(1)">Selanjutnya</button>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000);
+                    }
+                    </script>
                 </div>
                 <!--Ini konten form-->
                 <div style="height: 500px; width : 100%;
@@ -112,7 +149,72 @@
                 <p>Pilihan Paket : <span id="sender-paket"></span></p>
                 <p>Pesan : <span id="sender-messages"></span></p>
             </div>
+            <div>
+                <input type="checkbox" id="dataValidation" name="valid" value="sesuai">
+                <label for="dataValidation">Dengan ini, saya menyatakan data yang dimasukkan adalah benar, 
+                    <br>dan akan melanjutkan proses pembayaran.
+                </label>
+                <br>
+                <p>Pilihan pembayaran:</p>
+                <input type="radio" id="bank-transfer" name="payment" value="Transfer Bank">
+                <label for="bank-transfer">Transfer Bank</label><br>
+                <input type="radio" id="dana" name="payment" value="Dana">
+                <label for="dana">DANA</label><br>
+                <button>Bayar</button>
+            </div>
+        <hr></hr>
+            <div class="packages">
+                <div class="header-packages">
+                    <h1 style="text-align:center"><b>OUR PACKAGE</b></h1>
+                </div>
+        <hr></hr>
+                <div class="pilihan-paket">
+                    <div class="paket-turki">
+                        <h2 style="text-align:center"><b>UMROH PLUS TURKI</b></h2>
+                        <p style="size: 16pt">Benefits:</p>
+                        <ul>
+                            <li>Durasi: 12 Hari</li>
+                            <li>Hotel Bintang 4: Makkah & Madinah</li>
+                            <li>Hotel Bintang 3: Turki</li>
+                            <li>Makan 3x Sehari</li>
+                            <li>Free ticket Kereta Cepat</li>
+                        </ul>
+                        <h2 style="text-align:center"><b>Hanya 2,9 Jt-an</b></h2>
+                    </div>
+                    <div class="paket-mesir">
+                        <h2 style="text-align:center"><b>UMROH PLUS MESIR</b></h2>
+                        <p style="size: 16pt">Benefits:</p>
+                        <ul>
+                            <li>Durasi: 14 Hari</li>
+                            <li>Hotel Bintang 4: Makkah & Madinah</li>
+                            <li>Hotel Bintang 4: Mesir</li>
+                            <li>Makan 3x Sehari</li>
+                            <li>Free ticket Kereta Cepat</li>
+                        </ul>
+                        <h2 style="text-align:center"><b>Hanya 3,4 Jt-an</b></h2>
+                    </div>
+                    <div class="paket-dubai">
+                        <h2 style="text-align:center"><b>UMROH PLUS DUBAI</b></h2>
+                        <p style="size: 16pt">Benefits:</p>
+                        <ul>
+                            <li>Durasi: 9 Hari</li>
+                            <li>Hotel Bintang 4: Makkah & Madinah</li>
+                            <li>Tour Dubai 
+                            <li>Makan 3x Sehari</li>
+                            <li>Free ticket Kereta Cepat</li>
+                        </ul>
+                        <h2 style="text-align:center"><b>Hanya 3,2 Jt-an</b></h2>
+                    </div>
+                </div>
+            </div>
     </body>
     <footer>
+        <header>
+            <h2 style="text-align:center"><b>Booking sekarang juga, dapatkan promo menarik!</b></h2>
+            <h5 style="text-align:center"><b>Nur Fuadi Travel</b></h5>
+            <h5 style="text-align:center">since 2024</h5>
+            <h6 style="text-align:center">@copyright@ Nur-Fuadi-Travel</h6>
+            <button style="text-align:center">CONTACT US</button>
+        </header>
     </footer>
 </html>
